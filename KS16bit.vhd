@@ -117,13 +117,13 @@ architecture behaviour of KS16bit is
 		--intermediate carries--
 		carry :
 		for i in 0 to 15 generate
-			C(i) <= G4(i) or (P4(i) xor Cin);
+			C(i) <= G4(i) or (P4(i) and Cin);
 		end generate carry;
 		
-		S(0) <= Cin xor P4(0);
+		S(0) <= Cin xor P(0);
 		adder :
 		for i in 1 to 15 generate
-			S(i) <= P4(i) xor C(i-1);
+			S(i) <= P(i) xor C(i-1);
 		end generate adder;
 		
 		
