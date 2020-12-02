@@ -3,9 +3,9 @@
 
 entity KS16bit is
 
-	port (G,P : in bit_vector(15 downto 0);
+	port (A,B : in bit_vector(15 downto 0);
 			Cin : in bit;
-			S : out bit_vector(15 downto 0));
+			S : out bit_vector(16 downto 0));  --EEshAAn ke liye special
 			
 end entity KS16bit;
 
@@ -40,7 +40,8 @@ end buff;
 
 
 architecture behaviour of KS16bit is
-
+	
+	signal G,P : bit_vector(15 downto 0);
 	signal G1, G2, G3, G4 : bit_vector(15 downto 0);
 	signal P1, P2, P3, P4 : bit_vector(15 downto 0);
 	signal C : bit_vector(15 downto 0);
@@ -58,7 +59,14 @@ architecture behaviour of KS16bit is
 	--type l1_blocks is array(14 downto 0) of node;
 	
 	begin
-	
+		
+		
+		lvl0:
+		for i in 0 to 15 generate
+			G(i) <= A(i) and B(i);
+			P(i) <= A(i) xor B(i);
+		end generate lvl0;
+		
 		buffer_1 : buffer_block
 		port map(G(0),P(0),G1(0),P1(0));
 		
@@ -125,6 +133,8 @@ architecture behaviour of KS16bit is
 		for i in 1 to 15 generate
 			S(i) <= P(i) xor C(i-1);
 		end generate adder;
+		
+		S(16) <= C(15);
 		
 		
 		
