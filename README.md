@@ -9,4 +9,4 @@ Directory structure will be <br>
     \--baaki tumne jo kara hai <br>
 </pre>
 
- adder and subtractor will be used as components in the final alu. adder and subtractor themselves use the KSA adder as their component. If you don't understand it dont worry about it -Sumeet Kumar Mishra
+Adder and subtractor will be used as components in the final alu. adder and subtractor themselves use the KSA adder as their component. If you don't understand it dont worry about it <br> -Sumeet Kumar Mishra
