@@ -3,10 +3,16 @@
 Directory structure will be <br>
 
 <pre>
-\-- Top level ALU.vhd <br>
-    \--Adder_and subtractor.vhd <br>
+\-- ALU.vhd <br>
+    \--Testbench_alu.vhd <br>
     \--KS16bit.vhd <br>
-    \--baaki tumne jo kara hai <br>
+    \--Adder16bit.vhd <br>
+    \--Sub16bit.vhd <br>
+    \--xor16.vhd <br>
+    \--nand16.vhd <br>
+    \--sixteen_or.vhd <br>
+    \--two_nand.vhd <br>
+    \--two_or.vhd <br>
 </pre>
 
-Adder and subtractor will be used as components in the final alu. adder and subtractor themselves use the KSA adder as their component. If you don't understand it dont worry about it <br> -Sumeet Kumar Mishra
+## 𝔎𝔢𝔢𝔭 ℭ𝔞𝔩𝔪 𝔞𝔫𝔡 𝔍𝔞𝔦 𝔖𝔥𝔯𝔢𝔢 ℜ𝔞𝔪
