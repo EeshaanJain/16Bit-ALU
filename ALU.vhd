@@ -91,7 +91,7 @@ architecture ALU_behavior of ALU is
 	
 		lvl1:
 		
-		for i in 0 to 15 generate
+		for i in 0 to 16 generate
 			MUX_in : MUX_41 port map(ALU_ctrl(0), ALU_ctrl(1), temp_add(i), temp_sub(i), temp_xor(i), temp_nand(i), internal(i)); 
 		
 		end generate lvl1;
