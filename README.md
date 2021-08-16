@@ -15,4 +15,8 @@ Directory structure will be <br>
     \--two_or.vhd <br>
 </pre>
 
-## 𝔎𝔢𝔢𝔭 ℭ𝔞𝔩𝔪 𝔞𝔫𝔡 𝔍𝔞𝔦 𝔖𝔥𝔯𝔢𝔢 ℜ𝔞𝔪
+# Contributors
+1. Eeshaan Jain
+2. Anupam Nayak
+3. Vipin Singh
+4. Sumeet Mishra
