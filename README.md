@@ -1,4 +1,4 @@
-# ee224-project
+# 16 bit Arithmetic Logic Unit
 
 Directory structure will be <br>
 
